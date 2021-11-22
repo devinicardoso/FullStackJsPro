@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastro Liga dos Astronautas</title>
+</head>
+<body>
+    <h3>Cadastro da Liga dos Astronautas</h3>
+    <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required><br><br>
+    </div>
+
+    <div>
+        <label for='email'>Email:</label>
+        <input type="email" id="email" required>
+    
+        <label for="pwd"> - Password:</label>
+        <input type="password" id="pwd" required><br><br>
+    </div>
+
+    <div>
+        <label for="date">Data de nascimento:</label>
+        <input type="date" id="date" required>
+
+        <label> - Foto:</label>
+        <input type="file" required><br><br>
+    </div>
+
+    <div>
+        <label for="nationality">Nacionalidade</label>
+        <select name="nationality" id="nationality">
+            <option value="Russian">Russa</option>
+            <option value="American">Americano</option>
+            <option value="Brasilian">Brasileira</option>
+        </select>
+
+        <label> - Genero </label>
+        <label for="female">F</label>
+        <input type="radio" name="gender" id='female' value="female" required checked>
+        <label>M</label>
+        <input type="radio" name="gender" id='male' value="male" required><br><br>
+    </div>
+
+    <div>
+        <label>Suas Principais qualidades</label><br>
+        <label>Inteligência</label>
+        <input type="checkbox" name="qualit1" id="qualit1">
+        <label> | Resiliência</label>
+        <input type="checkbox" name="qualit2" id="qualit2">
+        <label> | Preparo Físico</label>
+        <input type="checkbox" name="qualit3" id="qualit3">
+        <label> | Educação</label>
+        <input type="checkbox" name="qualit4" id="qualit4">|<br><br>
+
+    </div>
+
+    <div>
+        <textarea id="text-area" rows="10" cols="30" placeholder="Porque você gostaria de ser um astronauta?"></textarea><br><br>
+    </div>
+
+    <div>
+        <input type="submit" value="Criar">
+    </div>
+
+    
+
+</body>
+</html>
