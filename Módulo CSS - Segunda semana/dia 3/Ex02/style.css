@@ -1,0 +1,29 @@
+#block {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    background-color: #fffafa;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 50px 0 50px;
+}
+
+.date {
+    font-family: 'Roboto', sans-serif;
+    color: #008080;
+    font-weight: bold;
+    padding: 25px 50px 0 50px;
+}
+
+.post-content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    
+    padding: 0 50px 40px 50px;
+}
+
+hr {
+    width: 100%;
+}
