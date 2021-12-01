@@ -1,7 +1,10 @@
-.container {
-    margin-top: 80px;
+.navbar-item img {
+    max-height: 6rem;
+    max-width: 40rem;
+
 }
 
-.card {
-    /* max-width: 20%; */
+
+.container {
+    margin-top: 80px;
 }
