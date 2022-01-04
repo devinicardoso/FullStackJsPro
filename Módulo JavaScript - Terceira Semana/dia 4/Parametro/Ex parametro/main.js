@@ -1,60 +1,56 @@
 let velocity = 0
+let spaceshipName = prompt("Name for Spaceship: ")
 
 
-function spaceship() {
-    let name = prompt("Name for Spaceship: ")
-    console.log("Name entered: " + name)
-    return name
-}
-
-function name() {
-
-}
-
-spaceship()
 
 function menu() {
     let option = prompt("Choose an option:\n\n1- Speed ​​gup the spacecraft by 5km/s\n2- Decelerate the spacecraft by 5 km/s\n3- Print onboard data\n4- Exit")
-    let optionSelect = 0
-    do {
-        switch (option) {
-            case "1":
-                alert("Velocity:" + acceleration(velocity) + " Km/s")
-                break
 
-            case "2":
-                alert("Velocity: " + slowdown() + "Km/s")
-                break
+    switch (option) {
+        case "1":
+            acceleration()
+            console.log(velocity)
+            break
 
-            case "3":
-                alert("Onbord Data \n\nSpaceship Name: " + spaceship() + "\nVelocity Atual: " + velocity + "Km/s")
-                break
+        case "2":
+            slowdown()
+            break
 
-            case "4":
-                alert("Exit")
-                optionSelect += 1
-                break
+        case "3":
+            onbordData()
+            break
 
-            default:
-                alert("You must choose a valid one. Try again!")
-                break
+        case "4":
+            alert("You chose to leave!")
+            break
 
-        }
-    } while (optionSelect === "1")
+        default:
+            alert("You must choose a valid one. Try again!")
+            break
+
+    }
+
 }
 
 menu()
 
-function acceleration(velocity) {
-    velocity += 5
-    return velocity
+function acceleration() {
+    velocity = velocity + 5
+    alert("Speed increased by 5 km/s. Current speed: " + velocity + " Km/s")
+    menu()
 }
 
 function slowdown() {
     if (velocity !== 0) {
         velocity = velocity - 5
+        alert("Speed reduced by 5 km/s. Current speed: " + velocity + " Km/s")
     } else {
         alert("You stopped, operation not finished")
     }
-    return velocity
+    menu()
+}
+
+function onbordData() { 
+    alert("Onbord Data \n\nSpaceship Name: " + spaceshipName + "\nVelocity Atual: " + velocity + "Km/s")
+    menu()
 }
