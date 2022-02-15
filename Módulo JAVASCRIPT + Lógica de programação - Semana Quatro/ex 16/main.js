@@ -3,8 +3,8 @@ class Spaceship {
        return 0.17
     }
     
-   constructor(name, crewQuantity) {
-       this.name = name
+   coinstructor(name, crewQuantity) {
+       ths.name = name
        this.crewQuantity = crewQuantity
        this.velocity = 0
    }
@@ -36,20 +36,17 @@ let printSpaceship = function () {
 }
 
 do {
-    chosenOption = prompt("Informe a sua escolha:\n\n1- Cadastrar Nave\n2- Cadastra nova nave\n3- Mostrar dados e sair")
+    chosenOption = prompt("Informe a sua escolha:\n\n1- Cadastrar Nave\n2- Mostrar dados e sair")
     
     if(chosenOption == '1') {
         registerSpaceship()
     }
     
+    
     if(chosenOption == '2') {
         printSpaceship()
     }
-    
-    if(chosenOption == '3') {
-        printSpaceship()
-    }
-}while (chosenOption == '1' || chosenOption == '2')
+}while (chosenOption == '1')
 
 
 
