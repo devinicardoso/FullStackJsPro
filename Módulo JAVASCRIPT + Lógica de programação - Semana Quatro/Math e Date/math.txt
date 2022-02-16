@@ -1,0 +1,9 @@
+Math.pow(5, 3) -> Eleva um número 
+5 x 5 x 5
+resultado 125
+
+Math.PI -> mostra o número de PI
+resultado 3.141592....
+
+Math.sqrt(64) -> mostra a raiz quadrada de um número
+resultado 8

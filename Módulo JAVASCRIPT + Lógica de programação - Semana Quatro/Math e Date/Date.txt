@@ -1,0 +1,9 @@
+criando uma data = 
+
+let myBirthday = new data(aaaa, mm, dd)
+
+Sempre lembra que no date o primeiro mes é janeiro com o numero 0
+
+Para retornar a data do dia de hoje, podemos fazer da seguinte forma
+
+let today = Date.now()
