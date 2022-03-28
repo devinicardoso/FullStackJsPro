@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando o DOM</title>
+    <style>
+        #areaImovel {
+            width: 99px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cadastro de imóveis</h1>
+     <p>
+         <span>Tipo:</span>
+         <select id="tipoImovel" required>
+             <option value="casa">Casa</option>
+             <option value="Apartamento">Apartamento</option>
+         </select>
+     </p>
+
+     <p>
+         <span>Área do imóvel</span>
+         <input type="number" name="areaImovel" id="areaImovel" required>m²
+     </p>
+
+     <p>
+        <span>Alugada:</span>
+        <select id="imovelAlugado" required>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+    </p>
+
+    <p>
+        <button type="button" onclick="registroImovel()">Cadastrar</button>
+    </p>
+
+    <hr>
+
+    <h1>Lista de imóveis</h1>
+
+    <ul id="listaImoveis"></ul>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
